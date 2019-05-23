@@ -1,0 +1,90 @@
+{
+    "EntityCode": "Order",
+    "EntityName": "销售订单",
+    "EntityDescription": "销售订单模型",
+    "EntityNameSpace": "Inspur.Gsp.Order",
+    "EntityTableCode": "GspOrder",
+    "EntityFieldCollection": [
+        {
+            "FieldCode": "ID",
+            "FieldName": "内码",
+            "FieldType": "string",
+            "FieldConstraint": {
+                "MaxLength": "36",
+                "MinLength": "36",
+                "IsEmpty": "false"
+            }
+        },
+        {
+            "FieldCode": "Code",
+            "FieldName": "订单编号",
+            "FieldType": "string",
+            "FieldConstraint": {
+                "MaxLength": "50",
+                "MinLength": "1",
+                "IsEmpty": "false"
+            }
+        },
+        {
+            "FieldCode": "Name",
+            "FieldName": "订单名称",
+            "FieldType": "string",
+            "FieldConstraint": {
+                "MaxLength": "50",
+                "MinLength": "1",
+                "IsEmpty": "false"
+            }
+        },
+        {
+            "FieldCode": "Price",
+            "FieldName": "单价",
+            "FieldType": "double",
+            "FieldConstraint": {
+                "Length": "8",
+                "Precision": "2"
+            }
+        },
+        {
+            "FieldCode": "OrderCount",
+            "FieldName": "订单数目",
+            "FieldType": "int"
+        },
+        {
+            "FieldCode": "OrderAmount",
+            "FieldName": "订单金额",
+            "FieldType": "double",
+            "FieldConstraint": {
+                "Length": "8",
+                "Precision": "2"
+            }
+        },
+        {
+            "FieldCode": "Status",
+            "FieldName": "订单状态",
+            "FieldType": "int",
+            "FieldConstraint": {
+                "IsEnum": "true",
+                "EnumCollection": [
+                    {
+                        "Key": 0,
+                        "Value": "Creating"
+                    },
+                    {
+                        "Key": 1,
+                        "Value": "Created"
+                    }
+                ]
+            }
+        },
+        {
+            "FieldCode": "IsVip",
+            "FieldName": "是否会员",
+            "FieldType": "bool"
+        },
+        {
+            "FieldCode": "CreateTime",
+            "FieldName": "创建时间",
+            "FieldType": "DateTime"
+        }
+    ]
+}
